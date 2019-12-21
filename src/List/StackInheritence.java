@@ -8,11 +8,11 @@ public class StackInheritence <T> extends List<T> {
     }
     public void push(T object)
     {
-        l.InsertFront(object);
+        InsertFront(object);
     }
-    public T pop()
+    public T pop() throws EmptyListException
     {
-        return l.DeleteFront();
+        return DeleteFront();
     }
-    public void print()
+
 }
